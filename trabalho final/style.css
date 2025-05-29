@@ -1,0 +1,335 @@
+body {
+  background-color: #a0b3c6; 
+  margin: 0;
+  font-family: sans-serif;
+}
+
+h3 {
+  font-size: 12px;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 100px;
+}
+
+.container .top {
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.container img {
+  width: 85px;
+  height: auto;
+  margin-right: 15px; 
+  margin-bottom: -20px;
+}
+
+.container h1 {
+  font-size: 48px;
+  color: #2c3e50;
+  margin: 0;
+  margin-right: 90px;
+}
+
+.container h2 {
+  font-size: 32px;
+  color: #34495e;
+  margin-top: 30px; 
+}
+
+.e-mail {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-top: 50px;
+}
+
+.form-wrapper {
+  position: relative;
+  width: fit-content; 
+}
+
+.e-mail input:first-of-type {
+  margin-top: 30px; 
+}
+
+.e-mail form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 30px 80px 120px 80px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+  width: auto;
+  font-size: 19px;
+}
+
+#loginFields,
+#registerFields,
+#participar {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.participar-btn {
+  position: absolute;
+  top: 10px;
+  right: 195px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 8px 50px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#criarsessao_btn {
+  background-color: #6dafe9; 
+  color: rgb(0, 0, 0);            
+  padding: 5px 12px;      
+  font-size: 16px;         
+  border-radius: 5px;      
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.5);            
+  cursor: pointer;
+  transition: all 0.3s ease;         
+}
+
+#iniciaSessaoBtn {
+    background-color: #6dafe9; 
+    color: rgb(8, 8, 8);             
+    border: none;             
+    padding: 8px 50px;        
+    border-radius: 8px;       
+    font-size: 14px;          
+    cursor: pointer;   
+    bottom: 70px;      
+}
+
+
+.organizar-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #2c3e50;
+  color: white;
+  border: none;
+  padding: 8px 50px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.enviar {
+  background-color: #2a639c;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+}
+
+.criar_conta {
+  color: #a7a6a6;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 0;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  bottom: 70px;
+  right: 150px;
+}
+
+.e-mail form label {
+  margin-top: 0;
+}
+
+.e-mail input {
+  font-size: 15px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.e-mail input:focus {
+  border-color: #2a639c;
+}
+
+.politicas {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #34495e;
+}
+
+.politicas a {
+  text-decoration: none;
+  color: #2a639c;
+}
+
+.politicas a:hover {
+  text-decoration: underline;
+}
+
+
+#menu {
+    display: flex;                    
+    justify-content: center;          
+    align-items: center;             
+    height: 100vh;                    
+    gap: 10px;                        
+    position: absolute;               
+    top: 0;
+    left: 0;
+    right: 0px;
+    padding-left: 42%; /* Você pode ajustar o valor conforme necessário */
+}
+
+.voltarinicio-btn, .gerirsessao-btn, #voltarDaGestaoBtn {
+    background-color: #2d78e9;        
+    color: white;                     
+    padding: 4px 12px;                
+    border: none;                     
+    border-radius: 30px;              
+    cursor: pointer;                 
+    font-size: 16px;                  
+    transition: background-color 0.3s;
+}
+
+.voltarinicio-btn:hover, 
+.gerirsessao-btn:hover, 
+#voltarDaGestaoBtn:hover {
+    background-color: #0056b3;
+}
+
+
+#vistaSala_btn, #vistaParticipantes_btn {
+  background-color: #2d78e9;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;                      
+}
+
+#vistaParticipantes_btn {
+  background-color: #2d78e9;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;                 
+}
+
+
+#vistaSala_btn:hover, #vistaParticipantes_btn:hover {
+  background-color: #1a5edc;
+}
+
+
+.nomeSessaoExibido {
+  text-align: center;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+  
+}
+
+/* Configurações gerais para os h2 */
+.propostaAtual, .participantes, .Nome, .Votos, .Assento {
+  text-align: center;
+  color: #000000;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Aplique o Flexbox na div para alinhar os itens horizontalmente */
+.colunaHorizontal {
+  display: flex; /* Aqui está o Flexbox correto */
+  justify-content: space-around; /* Espaçamento igual entre os itens */
+  align-items: center; /* Alinha os itens ao centro verticalmente */
+  margin-top: 20px; /* Ajuste de margem superior, se necessário */
+}
+
+
+.Nome, .Votos, .Assento {
+  margin: 0 10px; 
+}
+
+.quadrado-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#quadrado {
+  width: 100px;
+  height: 100px;
+  background-color: teal;
+  margin: 20px auto;
+  transition: width 0.3s, height 0.3s;
+  border-radius: 10px;
+}
+
+.controle-tamanho button {
+  font-size: 22px;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  background-color: #0077cc;
+  color: white;
+}
+
+.controle-tamanho button:hover {
+  background-color: #005fa3;
+}
+
+
+#quadrado {
+  display: grid;
+  gap: 4px;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+}
+
+.grid-cell {
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-size: 14px;
+  user-select: none;
+}
+
+.grid-cell.selected-seat {
+  background-color: #4CAF50;
+  color: white;
+  font-weight: bold;
+}
+
+.controle-tamanho {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}

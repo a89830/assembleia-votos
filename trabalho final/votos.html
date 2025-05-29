@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" sizes="128x128" href="https://i.pinimg.com/564x/47/bd/0b/47bd0bb7a69928b555b72039239572f5.jpg">
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <img src="https://cdn-icons-png.flaticon.com/512/3375/3375274.png" alt="Imagem decorativa">
+            <h1>Assembleia</h1>
+        </div>
+        <h2>Gestão de votos</h2>
+    </div>
+    
+    <!-- Quadrado ajustável - escondido inicialmente -->
+    <div id="quadradoGerirSessao" style="display: none;" class="quadrado-container">
+        <div id="quadrado"></div>
+        <div class="controle-tamanho">
+            <button id="aumentarBtn">+</button>
+            <button id="diminuirBtn">-</button>
+        </div>
+    </div>
+  
+
+    <!-- Menu superior (fora do form) - Visível após Criar Sessão -->
+    <div id="menu" style="display: none;">
+        <button type="button" class="voltarinicio-btn" id="voltarinicio_btn">Voltar Ao Início</button>
+        <button type="button" class="gerirsessao-btn" id="gerirsessao_btn">Gerir Sessão</button>
+        <button id="voltarDaGestaoBtn" style="display: none;">Voltar</button>
+    </div>
+    
+    <div class="e-mail">
+        <div class="form-wrapper">
+            <form id="loginForm" action="#" method="post">
+                <button type="button" class="participar-btn" id="participar_btn">Participar</button>
+                <button type="button" class="organizar-btn" id="organizar_btn">Organizar</button>
+                
+                <!-- Campos do Participar -->
+                <div id="participar" style="display: none;">
+                    <input type="text" name="codigo" placeholder="Código" required>
+                    <button type="submit" class="enviar">Código</button>
+                </div>
+              
+                <!-- Campos do Login -->
+                <div id="loginFields" style="display: flex;">
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="password" name="password" placeholder="Senha" required>
+                </div>
+              
+                <!-- Campos para Criar Conta -->
+                <div id="registerFields" style="display: none;">
+                    <input type="text" name="nome" placeholder="Nome" required>
+                    <input type="text" name="apelido" placeholder="Apelido" required>
+                    <input type="email" name="email" placeholder="E-mail" required>
+                    <input type="password" name="senha" placeholder="Senha" required>
+                    <button type="submit" class="enviar" id="toggleFormBtn1">Criar Conta</button>
+                </div>
+
+                <!-- Botão para Iniciar Sessão -->
+                <button type="button" id="iniciaSessaoBtn">Iniciar Sessão</button>
+
+                <!-- Seção para Criar Sessão -->
+                <div id="criarSessao" style="display: none;">
+                    <input type="text" name="nomesessao" placeholder="Nome da Sessão">
+                    <button type="button" class="criarsessao-btn" id="criarsessao_btn">Criar Sessão</button>
+                </div>
+
+                <!-- Botão para Criar Conta -->
+                <button type="button" class="criar_conta" id="toggleFormBtn2">Criar Conta</button>
+
+                <!-- Botões para Vista da Sala e Vista de Participantes (aparecem após criar a sessão) -->
+                <div id="vistaBtns" style="display: none;">
+                    <button type="button" class="vista-btn" id="vistaSala_btn">Vista da Sala</button>
+                    <button type="button" class="vista-btn" id="vistaParticipantes_btn">Vista de Participantes</button>
+                </div>
+
+                <!-- Pagina depois de clicar vista da sala-->
+                <div id="salaView">
+                    <h2 id="nomeSessaoExibido" class="nomeSessaoExibido"></h2>
+                    <h2 id="propostaAtual" class="nomeSessaoExibido" style="display: none;">Proposta Atual</h2>
+                    <h2 id="sala" class="nomeSessaoExibido" style="display: none;">Sala</h2>
+                </div>
+
+                <!-- Pagina depois de clicar vista de participantes-->
+                <div id="salaMembers">
+                    <h2 id="propostaAtual" class="propostaAtual" style="display: none;">Proposta Atual</h2>
+                    <h2 id="participantes" class="participantes" style="display: none;">Participantes</h2>
+
+                    <!-- Agrupe os títulos Nome, Votos e Assento em uma div para aplicar o Flexbox -->
+                    <div class="colunaHorizontal">
+                        <h2 id="Nome" class="Nome" style="display: none;">Nome</h2>
+                        <h2 id="Votos" class="Votos" style="display: none;">Votos</h2>
+                        <h2 id="Assento" class="Assento" style="display: none;">Assento</h2>
+                    </div>
+            
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="politicas">
+        <h3> 
+            Ao usar esta aplicação, concorda com a sua 
+            <a href="https://politicaprivacidade.com" target="_blank">
+                Política de Privacidade.
+            </a>
+        </h3>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
